@@ -8,11 +8,22 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* NAVBAR STYLES */
-
-.navbar {
-  border: 1px solid black;
+p, h1, h2, li, a {
+  color: rgba(0,0,0,0.7);
+  line-height: 1.4;
 }
+
+/* TESTING BORDER STYLES */
+
+#contain {
+  /*border: 1px solid black;*/
+}
+
+.test {
+  /*border: 1px solid red;*/
+}
+
+/* NAVBAR STYLES */
 
 .navbar-default .navbar-nav a {
   font-size: 1.1rem;
@@ -48,7 +59,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*height: 30rem;  temporary */    /*width: 100%;*/
     }
 
 .jumbotron-bike h1 {
@@ -59,24 +69,140 @@ body {
   text-align: center; /* TEMP FOR BOX MODEL*/
 }
 
+.jumbotron-bike h1, .jumbotron .container p {
+  text-align: center;
+}
+
+.jumbotron .container p {
+  margin-bottom: 2.8rem;
+}
+
 .jumbotron-bike p {
   color: white;
 }
 
 .jumbotron .container {
+  /***********/
   /* TEMP FOR FLEX MODEL*/
   /*display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;*/
-}
-
-.jumbotron .container {
-  width: 50%; /* TEMP FOR BOX MODEL*/
+  /***********/
+  width: 51.3rem;
   padding: 11.85rem 0;
 }
 
-.jumbotron .container p {
+/* JUMBOTRON MEDIA QUERIES */
+
+@media only screen and (max-width: 749px) {
+
+  .jumbotron-bike h1 {
+    font-size: 5.7rem;
+  }
+
+  .jumbotron .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
+
+/* BUTTON STYLES */
+
+.btn-primary {
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  width: 11.4rem;
+  padding: 1.3rem 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0,0,0,0.5);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.9);
+}
+
+/* FEATURED PROJECT AND PROJECTS SHARED STYLES */
+
+.featured-project img,
+.projects img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.featured-project .image-container,
+.projects .image-container {
+
+}
+
+.projects .image-container img {
+  opacity: 0.7;
+}
+
+.featured-project .container,
+.projects .container {
+  width: 100%;
+}
+
+.featured-project h1, .projects h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
+  margin-bottom: 20px;
+}
+
+.featured-project h2, .projects h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.featured-project .container, .projects .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* PROJECTS STYLES */
+
+.container.product h2 {
+  color: #399bd1;
+}
+
+.projects {
+  padding-bottom: 5.85rem;
+}
+
+/* FOOTER TROUBLE STYLES */
+
+.trouble {
+  padding-top: 5.2rem;
+  padding-bottom: 5.2rem;
+  background-color: #f3f3f3;
   text-align: center;
+}
+
+.trouble strong {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+.trouble p {
+  padding: 1.4rem 5rem 2.8rem 5rem;
+}
+
+/* FOOTER TROUBLE MEDIA QUERY STYLES */
+
+@media only screen and (max-width: 749px) {
+
+  .trouble p {
+    padding: 1.4rem 0 2.8rem 0;
+  }
+
 }
