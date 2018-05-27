@@ -168,6 +168,18 @@ p, h1, h2, li, a {
   padding-right: 0;
 }
 
+/* FEATURED PROJECT STYLES */
+
+/* FEATURED PROJECT MEDIA QUERY STYLES */
+
+@media only screen and (min-width: 992px) {
+
+  .featured-project h2 {
+    margin-top: 0;
+  }
+
+}
+
 /* PROJECTS STYLES */
 
 .container.product h2 {
