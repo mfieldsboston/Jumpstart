@@ -32,6 +32,7 @@ p, h1, h2, li, a {
 
 .navbar-default .navbar-nav > .active > a {
   color: #399bd1;
+  background-color: inherit;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
