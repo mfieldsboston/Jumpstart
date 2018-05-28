@@ -45,22 +45,47 @@ p, h1, h2, li, a {
 
 /* JUMBOTRON STYLES */
 
-.jumbotron-bike {
-    background-image: url(../images/jumbotron-bike.jpg);
+.jumbotron-bike,
+.jumbotron-beer,
+.jumbotron-flowers,
+.jumbotron-duffel {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     }
 
-.jumbotron-bike h1 {
+.jumbotron-bike {
+    background-image: url(../images/jumbotron-bike.jpg);
+    }
+
+.jumbotron-beer {
+    background-image: url(../images/jumbotron-beer.jpg);
+    }
+
+.jumbotron-flowers {
+    background-image: url(../images/jumbotron-flowers.jpg);
+    }
+
+.jumbotron-duffel {
+    background-image: url(../images/jumbotron-duffel.jpg);
+    }
+
+.jumbotron-bike h1,
+.jumbotron-beer h1,
+.jumbotron-flowers h1,
+.jumbotron-duffel h1    {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-family: 'Monoton', cursive;
   font-size: 7.1rem;
-  text-align: center; /* TEMP FOR BOX MODEL*/
+  text-align: center; /* TEMP FOR BOX MODEL */
 }
 
-.jumbotron-bike h1, .jumbotron .container p {
+.jumbotron-bike h1,
+.jumbotron-beer h1,
+.jumbotron-flowers h1,
+.jumbotron-duffel h1,
+.jumbotron .container p {
   text-align: center;
 }
 
@@ -68,7 +93,10 @@ p, h1, h2, li, a {
   margin-bottom: 2.8rem;
 }
 
-.jumbotron-bike p {
+.jumbotron-bike p,
+.jumbotron-beer p,
+.jumbotron-flowers p,
+.jumbotron-duffel p {
   color: white;
 }
 
@@ -81,7 +109,10 @@ p, h1, h2, li, a {
 
 @media only screen and (max-width: 749px) {
 
-  .jumbotron-bike h1 {
+  .jumbotron-bike h1,
+  .jumbotron-beer h1,
+  .jumbotron-flowers h1,
+  .jumbotron-duffel h1 {
     font-size: 5.7rem;
   }
 
@@ -164,8 +195,18 @@ p, h1, h2, li, a {
   padding-bottom: 5.85rem;
 }
 
+.projects .image-container {
+  overflow: hidden;
+}
+
 .projects .image-container img {
   opacity: 0.7;
+  transition: opacity 0.5;
+}
+
+.projects .image-container img:hover {
+  opacity: 1;
+  transform: scaleY(1.5);
 }
 
 /* FOOTER TROUBLE STYLES */
