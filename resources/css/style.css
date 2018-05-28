@@ -103,6 +103,7 @@ p, h1, h2, li, a {
 .jumbotron .container {
   width: 51.3rem;
   padding: 11.85rem 0;
+  height: 50rem;
 }
 
 /* JUMBOTRON MEDIA QUERIES */
