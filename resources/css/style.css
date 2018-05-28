@@ -13,16 +13,6 @@ p, h1, h2, li, a {
   line-height: 1.4;
 }
 
-/* TESTING BORDER STYLES */
-
-#contain {
-  /*border: 1px solid black;*/
-}
-
-.test {
-  /*border: 1px solid red;*/
-}
-
 /* NAVBAR STYLES */
 
 .navbar-default .navbar-nav a {
@@ -83,14 +73,6 @@ p, h1, h2, li, a {
 }
 
 .jumbotron .container {
-  /***********/
-  /* TEMP FOR FLEX MODEL*/
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;*/
-  /***********/
   width: 51.3rem;
   padding: 11.85rem 0;
 }
