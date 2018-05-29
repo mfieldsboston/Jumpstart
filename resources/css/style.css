@@ -15,6 +15,10 @@ p, h1, h2, li, a {
 
 /* NAVBAR STYLES */
 
+.navbar-default {
+  margin-bottom: 0;
+}
+
 .navbar-default .navbar-nav a {
   font-size: 1.1rem;
   font-weight: bold;
@@ -85,12 +89,20 @@ p, h1, h2, li, a {
 .jumbotron-beer h1,
 .jumbotron-flowers h1,
 .jumbotron-duffel h1,
-.jumbotron .container p {
+.jumbotron .top_container p {
   text-align: center;
+  margin-bottom: 0;
 }
 
-.jumbotron .container p {
-  margin-bottom: 2.8rem;
+.jumbotron-bike h1,
+.jumbotron-beer h1,
+.jumbotron-flowers h1,
+.jumbotron-duffel h1 {
+  margin-top: 0;
+}
+
+.jumbotron .top_container p {
+  /*margin-bottom: 2.8rem;*/
 }
 
 .jumbotron-bike p,
@@ -100,11 +112,33 @@ p, h1, h2, li, a {
   color: white;
 }
 
-.jumbotron .container {
-  width: 51.3rem;
-  padding: 11.85rem 0;
-  height: 50rem;
+.jumbotron .top_container {
+  padding: 0;
+  height: 60%;
+  margin: 0 auto;
+  padding-top: 11.85rem;
+  /*width: 51.3rem;*/
+  /*padding: 11.85rem 0 0 0;*/
+  /*height: 50rem;*/
+
 }
+
+.jumbotron .top_container p {
+  width: 51.3rem;
+  margin: 0 auto;
+}
+
+.jumbotron .bottom_container {
+  height: 40%;
+  padding-top: 2.8rem;
+}
+
+.jumbotron.jumbotron-bike,
+.jumbotron.jumbotron-beer,
+.jumbotron.jumbotron-flowers,
+.jumbotron.jumbotron-duffel {
+    height: 50rem;
+    }
 
 /* JUMBOTRON MEDIA QUERIES */
 
@@ -117,7 +151,7 @@ p, h1, h2, li, a {
     font-size: 5.7rem;
   }
 
-  .jumbotron .container {
+  .jumbotron .top_container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -133,6 +167,7 @@ p, h1, h2, li, a {
   padding: 1.3rem 0;
   margin: 0 auto;
   display: block;
+  margin-bottom: 11.85rem;
 }
 
 .btn-primary:active {
