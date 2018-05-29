@@ -241,22 +241,22 @@ p, h1, h2, li, a {
   transform: scaleY(1.5);
 }
 
-/* FOOTER TROUBLE STYLES */
+/* FOOTER STYLES */
 
-.trouble {
+.footer {
   padding-top: 5.2rem;
   padding-bottom: 5.2rem;
   background-color: #f3f3f3;
   text-align: center;
 }
 
-.trouble strong {
+.footer strong {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.4rem;
 }
 
-.trouble p {
+.footer p {
   padding: 1.4rem 5rem 2.8rem 5rem;
 }
 
@@ -264,7 +264,7 @@ p, h1, h2, li, a {
 
 @media only screen and (max-width: 749px) {
 
-  .trouble p {
+  .footer p {
     padding: 1.4rem 0 2.8rem 0;
   }
 
